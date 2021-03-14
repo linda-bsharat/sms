@@ -1,0 +1,13 @@
+.addinput {
+    margin: 5% 20%;
+}
+
+.formbox {
+    padding:2%;
+    background-color:rgb(233, 173, 245);
+    width: 100%;
+}
+
+.formbox .row{
+    margin-bottom: 10px;
+}

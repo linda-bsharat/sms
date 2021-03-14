@@ -1,0 +1,59 @@
+<div class="addinput">
+    <form class="formbox" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="addinput">
+            <app-error *ngIf="showError">
+                <app-error-message message="Please Enter item and description" [numberOfAttempts]="numberOfAttempts"></app-error-message>
+            </app-error>
+            <form class="formbox" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+          
+        <div class="row">
+          <div class="col-md-4">
+            Student Name 
+          </div>
+          <div class="col-md-8">
+            <label for="item" class="sr-only">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="linda" placeholder="linda" required>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+            Student id
+          </div>
+          <div class="col-md-8">
+            <label for="description" class="sr-only">ID</label>
+            <input type="number" formControlName="description" class="form-control" id="description" placeholder="1234567" required>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          Student GBA
+        </div>
+        <div class="col-md-8">
+          <label for="description" class="sr-only">GPA</label>
+          <input type="number" formControlName="description" class="form-control" id="description" placeholder="3.5" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+          Student BirthDay
+        </div>
+        <div class="col-md-8">
+          <label for="description" class="sr-only">BD</label>
+          <input type="date" formControlName="description" class="form-control" id="description" placeholder="4/5/2001" required>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            Student registration date
+        </div>
+        <div class="col-md-8">
+          <label for="description" class="sr-only">RD</label>
+          <input type="date" formControlName="description" class="form-control" id="description" placeholder="4/5/2001" required>
+        </div>
+        
+    </div>
+      <button type="submit" class="btn btn-warning">Insert data</button>
+    </form>
+    </div>
